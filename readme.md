@@ -1,3 +1,5 @@
+![ammolite.css](./assets/logo.svg)
+
 # ammolite.css
 ## About
 
