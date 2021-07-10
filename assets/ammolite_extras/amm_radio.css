@@ -1,0 +1,45 @@
+amm-radio{    
+}
+
+amm-radio .radio{
+    border-radius: 100%;
+    background-color: var(--amm-element-bg-color);
+    width: 1.5em;
+    height: 1.5em;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--amm-element-shadow);
+}
+
+amm-radio .radio-dot{    
+    background-color: var(--amm-element-fg-color);
+    width: .8em;
+    height: .8em;
+    animation:amradioanimatezoom 0.3s;
+    border-radius: 100%;
+}
+@keyframes amradioanimatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+amm-radio .radio-item{
+    display: flex;
+    align-items: center;
+}
+
+amm-radio .radio{
+    margin: .3em;
+}
+
+amm-radio .radio-item-disabled{
+    opacity: .6;
+    pointer-events: none;
+}
+
+amm-radio .radio-item label{
+    color: var(--amm-fg-color);
+    font-size: 1em;
+
+}
+
+
+

@@ -11,10 +11,22 @@ Minimal CSS/HTML5 boilerplate made for starter projects.
 * Typography
 * Basic CSS classes
 * Control through variables
+* scalable interface (change size of --amm-font-size)
+* basic light/dark themes
+* radio and checkbox web-components
 
 ## Variables
 
-You can find variables at top of "./assets/ammolite.css" file
+You can find basic variables at top of "./assets/ammolite.css" file:
+
+  --amm-font-size: 1.01em;   
+  --amm-bg-color: #fff;  
+  --amm-fg-color: #333;    
+  --amm-element-bg-color: #637180;  
+  --amm-element-fg-color: #ffffff;  
+  --amm-element-radius: 8px;   
+  --amm-element-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);    
+  --amm-transition: all 2s ease;    
 
 
 ## Demo

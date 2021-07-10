@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> AMMOLITE-CSS </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./../assets/ammolite.css" rel="stylesheet">
+   <link href="./../assets/ammolite_extras/amm_radio.css" rel="stylesheet">
+  <link href="./../assets/ammolite_extras/amm_checkbox.css" rel="stylesheet">
+</head>
+<body>
+
+
+<style>
+#header-group{    
+  --amm-bg-color: #000;
+  --amm-fg-color: #fff;
+  --amm-font-size: 1.2em; 
+  --amm-element-bg-color: #333;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding" id="header-group">
+
+
+<h1>Web components</h1>
+<p>
+ammolite.css (for now) comes with two components. Radio and checkbox.  
+</p>
+
+</div>
+
+
+<style>
+#radio{    
+  --amm-bg-color: #333;
+  --amm-fg-color: #aaa;
+  --amm-font-size: 1em;   
+  --amm-element-bg-color: #665429;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding" id="radio">
+
+<h1> Radio buttons </h1>
+<p>
+   This is basic radio button component that looks like this: 
+</p>
+
+<code><pre class="amm-group">&lt;amm-radio&gt; 
+    &lt;slot selected&gt;Alpha&lt;/slot&gt;
+    &lt;slot&gt;Beta&lt;/slot&gt;
+    &lt;slot&gt;Gamma&lt;/slot&gt;
+&lt;/amm-radio&gt; 
+</pre></code>
+
+<p>
+   And like this when processed:
+</p>
+
+<amm-radio> 
+    <slot selected>Alpha</slot>
+    <slot>Beta</slot>
+    <slot>Gamma</slot>
+</amm-radio> 
+
+<p>
+    To get which item is selected, run 'getElementState' method like this:         
+</p>
+<code><pre class="amm-group">
+    var item = document.getElementById('new-radio');    
+    console.log( item.getElementState() );
+</pre></code>
+
+</div>
+
+
+
+<style>
+#checkbox{    
+  --amm-bg-color: #f0a006;
+  --amm-fg-color: #333;
+  --amm-font-size: 1em;   
+  --amm-element-bg-color: #665429;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding" id="checkbox">
+<h1> Checkbox </h1>
+<p>
+   This is basic checkbox component that looks like this: 
+</p>
+
+<code><pre class="amm-group">&lt;amm-checkbox id="new-checkmark"&gt; 
+    &lt;slot disabled&gt; Alpha&lt;/slot&gt;
+    &lt;slot&gt; Beta&lt;/slot&gt;
+    &lt;slot&gt; Gamma&lt;/slot&gt;
+    &lt;slot selected&gt; Theta&lt;/slot&gt;
+&lt;/amm-checkbox&gt; 
+</pre></code>
+
+<p>
+   And like this when processed:
+</p>
+
+<amm-checkbox id="new-checkmark"> 
+    <slot disabled> Alpha</slot>
+    <slot> Beta</slot>
+    <slot> Gamma</slot>
+    <slot selected> Theta</slot>
+</amm-checkbox> 
+
+<p>
+    To get which item is selected, run 'getElementState' method like this:         
+</p>
+<code><pre class="amm-group">
+    var item = document.getElementById('new-checkbox');    
+    console.log( item.getElementState() );
+</pre></code>
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<script src="./../assets/ammolite_extras/amm_radio.js"></script>
+<script src="./../assets/ammolite_extras/amm_checkbox.js"></script>

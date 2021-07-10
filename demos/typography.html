@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> AMMOLITE-CSS </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./../assets/ammolite.css" rel="stylesheet">
+   <link href="./../assets/ammolite_extras/amm_radio.css" rel="stylesheet">
+  <link href="./../assets/ammolite_extras/amm_checkbox.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+<style>
+#header-group{    
+  --amm-bg-color: #fff;
+  --amm-fg-color: #444;
+  --amm-font-size: 1.1em;   
+  --amm-element-bg-color: #333;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding" id="header-group">
+
+HEADERS & PARAGRAPH
+<hr>
+
+<h1>Header One</h1>
+<h2>Header Two</h2>
+<h3>Header Three</h3>
+<h4>Header Four</h4>
+<h5>Header Five</h5>
+<h6>Header Six</h6>
+<p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</div>
+
+
+
+
+<style>
+#header-code{
+    
+  --amm-bg-color: #000000;
+  --amm-fg-color: #ffad00;
+  --amm-font-size: 1.1em;     
+  --amm-element-bg-color: #333;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding" id="header-code">
+
+<br>
+CODE
+<hr>
+
+<code><pre>namespace Dsijak;
+
+/*
+* Object Container
+* Usage:
+* Set:   container('one', new One());
+* Get:   $one = container('one');
+* Empty: container();
+*/
+
+function container($key=null, $obj=null)
+{
+    static $x;
+    
+    if (isset($x))
+    {
+        if ($key === null)
+        {
+            $x = [];
+            return null;  
+        }
+   
+        if ($obj === null)
+        {
+            if (isset($x[$key]))
+            {
+                return $x[$key];   
+            }
+            else
+            {
+                return null;
+            }
+        }   
+        $x[$key] = $obj;
+        return null;  
+    }
+    else
+    {
+        if ($obj === null)
+        {
+            return null;
+        }
+        else
+        {
+            $x = [];
+            $x[$key] = $obj;
+            return $obj;
+        }
+    }    
+}</pre></code>
+
+</div>
+
+
+<style>
+#header-input{    
+  --amm-bg-color: #fff;
+  --amm-fg-color: #444;
+  --amm-font-size: 1.1em;   
+  --amm-element-bg-color: #333;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding" id="header-input">
+INPUTS
+<hr>
+<input class="amm-input" Placeholder="I'm input font..." /> 
+<input class="amm-input" Placeholder="I'm input font..." /> 
+
+</div>
+
+<style>
+#header-classes{    
+  --amm-bg-color: #333;
+  --amm-fg-color: #aaa;
+  --amm-font-size: 1.1em;   
+  --amm-element-bg-color: #333;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding" id="header-classes">
+<br>
+CLASSES
+<hr>
+
+<h1 class="amm-font-condensed"> amm-font-condensed </h1>
+<div class="amm-font-condensed"> Hello I'm "amm-font-condensed" class - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<h1 class="amm-font-mono"> amm-font-condensed </h1>
+<div class="amm-font-mono"> Hello I'm "amm-font-mono" class  - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<hr>
+
+</div>
+
+
+</body>
+</html>
+
+
+<script src="./../assets/ammolite_extras/amm_radio.js"></script>
+<script src="./../assets/ammolite_extras/amm_checkbox.js"></script>

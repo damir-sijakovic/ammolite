@@ -1,0 +1,47 @@
+amm-checkbox{ 
+}
+
+amm-checkbox .checkbox{
+    background-color: var(--amm-element-bg-color);
+    width: 1.5em;
+    height: 1.5em;   
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    border-radius: 20%;   
+    box-shadow: var(--amm-element-shadow) ;
+}
+
+amm-checkbox .checkbox-check{
+    width: .5em;
+    height: 1.2em;
+    animation: checkboxanimatezoom 0.5s;
+    border-bottom: solid var(--amm-element-fg-color) .3em;
+    border-right: solid var(--amm-element-fg-color) .3em;
+    transform: rotate(400deg) translate(-5%, -15%);
+    background: transparent;
+}
+@keyframes checkboxanimatezoom{from{transform:scale(0)} to{transform:scale(1) rotate(400deg) translate(-5%, -15%) }}
+
+amm-checkbox .checkbox-item{
+    display: flex;
+    align-items: center;
+}
+
+amm-checkbox .checkbox{
+    margin: .3em;
+}
+
+amm-checkbox .checkbox-item-disabled{
+    opacity: .6;
+    pointer-events: none;
+}
+
+amm-checkbox .checkbox-item label{
+    color: var(--amm-fg-color);
+    font-size: 1em;
+    /*margin: 0 .3rem 0 .3rem;*/
+    user-select: none;
+}
+
+

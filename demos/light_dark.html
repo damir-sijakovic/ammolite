@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> AMMOLITE-CSS </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./../assets/ammolite.css" rel="stylesheet">
+   <link href="./../assets/ammolite_extras/amm_radio.css" rel="stylesheet">
+  <link href="./../assets/ammolite_extras/amm_checkbox.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="amm-padding" id="main">
+
+<div class="amm-button" onclick="toggle()" style="position:fixed; top:2%; right:2%;"> Light/Dark </div>
+<br><br>
+
+<img src="./../assets/logo.svg" />
+
+<h1>
+ammolite.css
+</h1>
+
+<p>
+Minimal CSS/HTML5 boilerplate made for starter projects.
+</p>
+
+<h3>
+Features
+</h3>
+
+<ul>
+<li> Everything reseted & normalized                     </li>
+<li> Typography                                          </li>
+<li> Basic CSS classes                                   </li>
+<li> Control through variables                           </li>
+<li> scalable interface (change size of --amm-font-size) </li>
+<li> basic light/dark theme and easy themes              </li>
+<li> radio and checkbox web-components                   </li>
+</ul>
+
+<hr>
+
+<h2>
+Quick demo elements
+</h2>
+
+<h3>
+This is amm-group class:
+</h3>
+
+<code><pre class="amm-group">if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    http_response_code(404);
+    die();
+}   
+</pre></code>
+
+<h3>
+This is amm-input class:
+</h3>
+
+<input class="amm-input" placeholder="Hello input"/>
+
+
+<h3>
+These are components:
+</h3>
+
+<amm-radio> 
+    <slot selected>Alpha</slot>
+    <slot>Beta</slot>
+    <slot>Gamma</slot>
+</amm-radio> 
+
+<br>
+
+<amm-checkbox id="new-checkmark"> 
+    <slot disabled> Alpha</slot>
+    <slot> Beta</slot>
+    <slot> Gamma</slot>
+    <slot selected> Theta</slot>
+</amm-checkbox> 
+
+
+<br>
+
+</div>
+
+</body>
+</html>
+
+<script>
+
+function toggle() {
+  var element = document.getElementById("main");
+  element.classList.toggle("amm-theme-dark");
+} 
+
+</script>
+
+<script src="./../assets/ammolite_extras/amm_radio.js"></script>
+<script src="./../assets/ammolite_extras/amm_checkbox.js"></script>

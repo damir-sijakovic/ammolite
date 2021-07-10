@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> AMMOLITE-CSS </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./../assets/ammolite.css" rel="stylesheet">
+   <link href="./../assets/ammolite_extras/amm_radio.css" rel="stylesheet">
+  <link href="./../assets/ammolite_extras/amm_checkbox.css" rel="stylesheet">   
+  
+<style>
+body {
+  margin: 40px;
+}
+
+.sidebar {
+  grid-area: sidebar;  
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "header  header  header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+  }
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+</style>
+
+  
+  
+  
+  
+  
+</head>
+<body>
+
+
+
+
+<script src="./../assets/ammolite_extras/amm_radio.js"></script>
+<script src="./../assets/ammolite_extras/amm_checkbox.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+  <div class="box header">
+  
+  
+  <style>
+#amm-header{
+  --amm-bg-color: #333;
+  --amm-fg-color: #ddd;
+  --amm-font-size: .8em;
+}
+</style>
+<div class="amm-padding amm-shadow-60" id="amm-header">
+
+
+<h1>
+Ut sem nulla pharetra diam sit amet nisl suscipit
+</h1>
+
+<p>
+By Damir Sijakovic about 14 hours ago
+</p>
+
+<h3>
+Morbi non arcu risus quis varius quam.
+</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+<div class="amm-button"> Hello </div>
+
+<br><br>
+</div>
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="box sidebar">
+  
+  
+  
+    <style>
+#amm-sidebar{
+  --amm-font-size: .7em;
+  --amm-bg-color: white;
+  --amm-fg-color: black;
+  --amm-element-bg-color: #333;
+  --amm-element-fg-color: #ddd;
+  
+}
+</style>
+<div class="amm-padding amm-shadow-60" id="amm-sidebar">
+
+
+<h1>
+Ut sem nulla pharetra diam sit amet nisl suscipit
+</h1>
+
+<p>
+By Damir Sijakovic about 14 hours ago
+</p>
+
+<h3>
+Morbi non arcu risus quis varius quam.
+</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+<div class="amm-button"> Hello </div>
+
+<br><br>
+</div>
+  
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="box content">
+  
+  
+<style>
+#amm-content{
+  --amm-bg-color: Cornsilk;
+  --amm-fg-color: black;
+  --amm-font-size: 1em;
+  --amm-element-bg-color: #333;
+  --amm-element-fg-color: #ddd;
+}
+</style>
+<div class="amm-padding amm-shadow-60" id="amm-content">
+
+
+<h1>
+Ut sem nulla pharetra diam sit amet nisl suscipit
+</h1>
+
+<p>
+By Damir Sijakovic about 14 hours ago
+</p>
+
+<h3>
+Morbi non arcu risus quis varius quam.
+</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+
+<div class="amm-button"> Hello </div>
+
+<br><br>
+</div>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="box footer">
+      
+      
+<style>
+#amm-footer{
+  --amm-bg-color: blueviolet;
+  --amm-fg-color: white;
+  --amm-font-size: 1em;
+  --amm-element-bg-color: #fff;
+  --amm-element-fg-color: #111;
+  --amm-element-shadow: 0 14px 10px 0 rgba(0,0,0,0.5),0 4px 20px 0 rgba(0,0,0,0.19);  
+}
+</style>
+<div class="amm-padding amm-shadow-60" id="amm-footer">
+
+
+<h1>
+Ut sem nulla pharetra diam sit amet nisl suscipit
+</h1>
+
+<p>
+By Damir Sijakovic about 14 hours ago
+</p>
+
+<h3>
+Morbi non arcu risus quis varius quam.
+</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+<div class="amm-button"> Hello </div>
+
+<br><br>
+</div>
+  
+      
+  </div>
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+</script>
+
