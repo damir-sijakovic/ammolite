@@ -29,9 +29,13 @@ You can find basic variables at top of "./assets/ammolite.css" file:
   --amm-transition: all 2s ease;    
 
 
-## Demo
+## Codepen Demos
 
-[Codepen](https://codepen.io/dsijak/pen/WNoVYMG)
+[Light-dark theme switch](https://codepen.io/dsijak/pen/OJmRxBZ)    
+[Components](https://codepen.io/dsijak/pen/yLbazGd)    
+[Rescale & themes](https://codepen.io/dsijak/pen/QWvKqYY)    
+[Typography](https://codepen.io/dsijak/pen/GRmjMLx)    
+
 
 ## Based on
 Code is based on extracts from W3.CSS 4.13 June 2019 by Jan Egil and Borge 
